@@ -7,7 +7,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Product_Inventory {
+public class Product_InventoryDto {
     private long products_reference;
     private long quantity;
     private long purchased_Items;

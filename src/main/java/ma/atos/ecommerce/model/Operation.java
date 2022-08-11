@@ -1,6 +1,7 @@
 package ma.atos.ecommerce.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -10,6 +11,7 @@ import java.util.Date;
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "type_operation")
 @DiscriminatorValue("Operation")
+@Data
 public abstract class Operation {
 
     @Id
